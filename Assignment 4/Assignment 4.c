@@ -7,8 +7,8 @@ typedef struct{
         unsigned char OperandA : 1;
         unsigned char OperandB : 1;
         unsigned char dot_in : 1;
-        unsigned char OperandA_Counter: 6;
-        unsigned char OperandB_Counter: 6;
+        unsigned char OperandA_Counter: 64;
+        unsigned char OperandB_Counter: 64;
 } Selector;
 
 double Operation_Doer(double operandA, double operandB, char operation){
