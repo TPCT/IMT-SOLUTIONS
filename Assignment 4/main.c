@@ -2,6 +2,7 @@
 
 int main() {
     printf("Please enter Q to Exit\n");
-    Calculator();
+    while(1)
+        Calculator();
     return 0;
 }
