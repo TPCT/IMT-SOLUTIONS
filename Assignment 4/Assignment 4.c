@@ -9,7 +9,7 @@ typedef struct{
         unsigned char dot_in : 1;
         unsigned long long OperandA_Counter: 64;
         unsigned long long OperandB_Counter: 64;
-        unsigned long long dot_counter : 1;
+        unsigned long long dot_counter : 64;
 } Selector;
 
 double Operation_Doer(double operandA, double operandB, char operation){
@@ -74,7 +74,7 @@ void Calculator(void){
                 printf("Please enter Operand A: ");
             }else if (select.OperandA_Counter && !select.OperandA) {
                 if (select.Operation_Select >= 8) {
-                    printf("The Result Of Operation: %lf", Operation_Doer(operandA, 0, select.Operation_Select));
+                    printf("\nThe Result Of Operation: %lf\n", Operation_Doer(operandA, 0, select.Operation_Select));
                     return;
                 }
                 operandA /= select.dot_counter;
@@ -84,7 +84,7 @@ void Calculator(void){
                 printf("Please enter Operand B: ");
             }else if(select.OperandB_Counter){
                 operandB /= select.dot_counter;
-                printf("The Result Of Operation: %f", Operation_Doer(operandA, operandB, select.Operation_Select));
+                printf("The Result Of Operation: %f\n", Operation_Doer(operandA, operandB, select.Operation_Select));
                 return;
             }
         }
