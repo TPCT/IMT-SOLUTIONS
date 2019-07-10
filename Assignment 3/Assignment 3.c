@@ -1,4 +1,4 @@
-#include "assignment 2.h"
+#include "assignment 3.h"
 
 int ScanFunction(int *numbers, int length){
     char c, counter = 0, temp_number_counter = 0;
