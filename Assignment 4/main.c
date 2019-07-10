@@ -2,9 +2,6 @@
 
 int main() {
     printf("Please enter Q to Exit\n");
-    do
-    {
-        Calculator();
-    }while(getchar() != 'q');
+    Calculator();
     return 0;
 }
