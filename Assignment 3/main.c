@@ -1,4 +1,4 @@
-#include "assignment 2.c"
+#include "assignment 3.c"
 
 int main() {
     int numbers[10], stp_index = 0;
